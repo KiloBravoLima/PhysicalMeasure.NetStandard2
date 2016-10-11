@@ -72,16 +72,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Interface Code Maps\Interfaces_CodeMap_20150525.xps" />
-    <None Include="Interface Code Maps\Interfaces_CodeMap_VS2015_20150525.dgml" />
-    <None Include="Nuget files\AssemblyInfo.txt4" />
-    <None Include="Nuget files\PhysicalMeasure.nuspec">
-      <DependentUpon>AssemblyInfo.txt4</DependentUpon>
-    </None>
-    <None Include="Nuget files\PhysicalMeasure.Sample.nuspec">
-      <DependentUpon>AssemblyInfo.txt4</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Properties\AssemblyInfo.ttlog">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -94,9 +84,7 @@
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Nuget files\Nuspec files2\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\KBLExtensions\KBL.Extensions.csproj">
       <Project>{7139b888-5ce1-4604-b2e8-19fd45bc8b0e}</Project>
