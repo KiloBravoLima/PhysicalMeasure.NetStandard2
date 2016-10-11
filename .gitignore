@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/PhysCalculator/packages
+/PhysCalculator/PhysCalc/bin/Debug
+/PhysCalculator/PhysCalc/obj/Debug
+/PhysCalculator/PhysCalculatorTests/bin/Debug/KBL.Extensions.dll
+*.pdb
+/PhysCalculator/PhysCalculatorTests/bin/Debug
+/PhysMeasure/KBLExtensions/bin/Debug
+/PhysMeasure/KBLExtensions/obj/Debug
+/PhysMeasure/KBLExtensionsTests/bin/Debug
+/PhysMeasure/KBLExtensionsTests/obj/Debug
+/PhysCalculator/PhysCalculatorTests/obj/Debug
+/PhysMeasure/PhysicalMeasure/bin/Debug
+/PhysMeasure/PhysicalMeasure/obj/Debug
+/PhysMeasure/PhysicalMeasureTest/bin/Debug
+/PhysMeasure/PhysicalMeasureTest/obj/Debug
