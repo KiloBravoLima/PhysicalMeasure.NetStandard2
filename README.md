@@ -70,8 +70,8 @@ PhysCalc is a calculator using PhysicalMeasure to evaluate physical expressions.
 ### Nuget package
 
 PhysicalMeasure are available as a Nuget package at 
-   [url:http://www.nuget.org/packages/PhysicalMeasure]
-   [url:http://www.nuget.org/packages/PhysicalMeasure.Sample]
+   http://www.nuget.org/packages/PhysicalMeasure
+   http://www.nuget.org/packages/PhysicalMeasure.Sample
 
 ### Links
 
