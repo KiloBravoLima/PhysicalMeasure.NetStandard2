@@ -1,11 +1,6 @@
 ## PhysicalMeasure
 PhysicalMeasure is a C# library for handling physical quantities by specifing value and unit. Scaling of units and conversions between multiple unit systems are supported.
 
-
-* Clone the sources: `git clone https://github.com/dotnet/roslyn.git`
-* [Enhanced source view](http://source.roslyn.io/), powered by Roslyn 
-* [Building, testing and debugging the sources](https://github.com/dotnet/roslyn/wiki/Building%20Testing%20and%20Debugging)
-
 ### Concept
 
 This library is a C# implementation of the concepts of system of physical units. eg. as found on Wikipedia: http://en.wikipedia.org/wiki/International_System_of_Units.
@@ -149,28 +144,29 @@ public String CalculatePriceInEuroForEnergiConsumed()
 }
 {code:c#}
 
-*PhysCalc console application*
+### PhysCalc console application
 
 PhysCalc is a calculator using PhysicalMeasure to evaluate physical expressions. 
 
-*Nuget package*
+### Nuget package
 
 PhysicalMeasure are available as a Nuget package at 
    [url:http://www.nuget.org/packages/PhysicalMeasure]
    [url:http://www.nuget.org/packages/PhysicalMeasure.Sample]
 
-*Links*
+### Links
 
 Additional information from Wikipedia on physical quantities and units:
- - [url:Physical quantity|http://en.wikipedia.org/wiki/Physical_quantity]
- - [url:Units of measurement|http://en.wikipedia.org/wiki/Units_of_measurement]
+ - Physical quantity    http://en.wikipedia.org/wiki/Physical_quantity
+ - Units of measurement http://en.wikipedia.org/wiki/Units_of_measurement
 
 Additional information from Wikipedia on SI units that I have covered in this library:
- - [url:SI base units|http://en.wikipedia.org/wiki/SI_base_unit]
- - [url:SI derived units|http://en.wikipedia.org/wiki/SI_derived_unit]
- - [url:SI unit prefixes|http://en.wikipedia.org/wiki/SI_prefix]
+ - SI base units    http://en.wikipedia.org/wiki/SI_base_unit
+ - SI derived units http://en.wikipedia.org/wiki/SI_derived_unit
+ - SI unit prefixes http://en.wikipedia.org/wiki/SI_prefix
 
 Other .Net libraries and utilities related to unit conversion
- - [List of .Net libraries and utilities related to unit conversion|Links to other .Net libraries and utilities related to unit conversion]
+ - List of .Net libraries and utilities related to unit conversion 
+ https://physicalmeasure.codeplex.com/wikipage?title=Links%20to%20other%20.Net%20libraries%20and%20utilities%20related%20to%20unit%20conversion&referringTitle=Home
 
 
