@@ -1,17 +1,18 @@
-# PhysicalMeasure
+## PhysicalMeasure
 PhysicalMeasure is a C# library for handling physical quantities by specifing value and unit. Scaling of units and conversions between multiple unit systems are supported.
 
 
-Concept
+### Concept
 
 This library is a C# implementation of the concepts of system of physical units. eg. as found on Wikipedia: http://en.wikipedia.org/wiki/International_System_of_Units.
 
 Requries .NET framework 4.6.
 
-Examples
+### Examples
 
 PhysicalMeasure can be used to represent and handle physical measures and calculations of physical properties. like this:
 
+```
 using PhysicalMeasure;
 using static PhysicalMeasure.SI;
 
@@ -27,9 +28,11 @@ public Quantity CalculateEnergyIn1Gram()
    Debug.Assert(expected == E);
    return E;
 }
+```
 
 PhysicalMeasure also supports user defined units and unit systems:
 
+```
 using PhysicalMeasure;
 using static PhysicalMeasure.SI;
 
@@ -58,29 +61,32 @@ public String CalculatePriceInEuroForEnergiConsumed()
 
    return PriceInEuroForEnergyConsumedStr;
 }
+```
 
-PhysCalc console application
+### PhysCalc console application
 
 PhysCalc is a calculator using PhysicalMeasure to evaluate physical expressions. 
 
-Nuget package
+### Nuget package
 
 PhysicalMeasure are available as a Nuget package at 
-http://www.nuget.org/packages/PhysicalMeasure
-http://www.nuget.org/packages/PhysicalMeasure.Sample
+   [url:http://www.nuget.org/packages/PhysicalMeasure]
+   [url:http://www.nuget.org/packages/PhysicalMeasure.Sample]
 
-Links
+### Links
 
 Additional information from Wikipedia on physical quantities and units:
-- Physical quantity
-- Units of measurement
+ - Physical quantity    http://en.wikipedia.org/wiki/Physical_quantity
+ - Units of measurement http://en.wikipedia.org/wiki/Units_of_measurement
 
 Additional information from Wikipedia on SI units that I have covered in this library:
-- SI base units
-- SI derived units
-- SI unit prefixes
+ - SI base units    http://en.wikipedia.org/wiki/SI_base_unit
+ - SI derived units http://en.wikipedia.org/wiki/SI_derived_unit
+ - SI unit prefixes http://en.wikipedia.org/wiki/SI_prefix
 
 Other .Net libraries and utilities related to unit conversion
-- List of .Net libraries and utilities related to unit conversion
+ - List of .Net libraries and utilities related to unit conversion 
+ https://physicalmeasure.codeplex.com/wikipage?title=Links%20to%20other%20.Net%20libraries%20and%20utilities%20related%20to%20unit%20conversion&referringTitle=Home
+
 
 
