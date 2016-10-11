@@ -83,17 +83,14 @@ Other .Net libraries and utilities related to unit conversion
 - List of .Net libraries and utilities related to unit conversion
 
 
-*Concept*
-
-This library is a C# implementation of the  concepts of system of physical units.  eg. as found on Wikipedia: [url:http://en.wikipedia.org/wiki/International_System_of_Units|http://en.wikipedia.org/wiki/International_System_of_Units].
 
 Requries .NET framework 4.6.
 
-*Examples*
+*Examples
 
 PhysicalMeasure can be used to represent and handle physical measures and calculations of physical properties. like this:
 
-{code:c#}
+ode:#
 using PhysicalMeasure;
 using static PhysicalMeasure.SI;
 
@@ -109,11 +106,11 @@ public Quantity CalculateEnergyIn1Gram()
    Debug.Assert(expected == E);
    return E;
 }
-{code:c#}
+ode:c#}
 
 PhysicalMeasure also supports user defined units and unit systems:
 
-{code:c#}
+{code:c
 using PhysicalMeasure;
 using static PhysicalMeasure.SI;
 
@@ -142,7 +139,7 @@ public String CalculatePriceInEuroForEnergiConsumed()
 
    return PriceInEuroForEnergyConsumedStr;
 }
-{code:c#}
+
 
 ### PhysCalc console application
 
