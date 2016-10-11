@@ -1,0 +1,161 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.25302.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysCalc", "PhysCalc\PhysCalc.csproj", "{74C979DF-C059-4DC4-BCA7-FC904F131B37}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A1384AC-58AA-4758-822F-25CCC6123F51} = {4A1384AC-58AA-4758-822F-25CCC6123F51}
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB} = {3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{023D025A-0D6F-464C-AFC2-A61EE955F6C8}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		PhysCalculator.vsmdi = PhysCalculator.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicalMeasureTest", "..\PhysMeasure\PhysicalMeasureTest\PhysicalMeasureTest.csproj", "{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A1384AC-58AA-4758-822F-25CCC6123F51} = {4A1384AC-58AA-4758-822F-25CCC6123F51}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysCalculatorTests", "PhysCalculatorTests\PhysCalculatorTests.csproj", "{02BDC068-8801-44EB-B355-AD4C48EEC54D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4A1384AC-58AA-4758-822F-25CCC6123F51} = {4A1384AC-58AA-4758-822F-25CCC6123F51}
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB} = {3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7EFECBE3-80D2-46D0-93EE-CEEF9971C067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicalMeasure", "..\PhysMeasure\PhysicalMeasure\PhysicalMeasure.csproj", "{4A1384AC-58AA-4758-822F-25CCC6123F51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSInteractive", "CSInteractive", "{CC98C940-05AA-4889-8B52-F97A477AC754}"
+	ProjectSection(SolutionItems) = preProject
+		CSInteractivePhysicalMeasureTest.csx = CSInteractivePhysicalMeasureTest.csx
+		CSInteractiveSetup.csx = CSInteractiveSetup.csx
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsTests", "..\PhysMeasure\KBLExtensionsTests\ExtensionsTests.csproj", "{51533EFE-2004-4123-8099-6A8226470F91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KBL.Extensions", "..\PhysMeasure\KBLExtensions\KBL.Extensions.csproj", "{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Debug|x86.Build.0 = Debug|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Release|x86.ActiveCfg = Release|Any CPU
+		{74C979DF-C059-4DC4-BCA7-FC904F131B37}.Release|x86.Build.0 = Release|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Release|x86.ActiveCfg = Release|Any CPU
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D}.Release|x86.ActiveCfg = Release|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Debug|x86.Build.0 = Debug|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Release|x86.ActiveCfg = Release|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Release|x86.Build.0 = Release|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Debug|x86.Build.0 = Debug|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Release|x86.ActiveCfg = Release|Any CPU
+		{51533EFE-2004-4123-8099-6A8226470F91}.Release|x86.Build.0 = Release|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Debug|x86.Build.0 = Debug|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Release|x86.ActiveCfg = Release|Any CPU
+		{7139B888-5CE1-4604-B2E8-19FD45BC8B0E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB} = {7EFECBE3-80D2-46D0-93EE-CEEF9971C067}
+		{02BDC068-8801-44EB-B355-AD4C48EEC54D} = {7EFECBE3-80D2-46D0-93EE-CEEF9971C067}
+		{51533EFE-2004-4123-8099-6A8226470F91} = {7EFECBE3-80D2-46D0-93EE-CEEF9971C067}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs12
+		SccProjectUniqueName0 = ..\\PhysMeasure\\PhysicalMeasure\\PhysicalMeasure.csproj
+		SccProjectName0 = ../PhysMeasure/PhysicalMeasure
+		SccAuxPath0 = https://tfs.codeplex.com/tfs/tfs12
+		SccLocalPath0 = ..\\PhysMeasure\\PhysicalMeasure
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = ..\\PhysMeasure\\PhysicalMeasureTest\\PhysicalMeasureTest.csproj
+		SccProjectTopLevelParentUniqueName1 = PhysCalculator.sln
+		SccProjectName1 = ../PhysMeasure/PhysicalMeasureTest
+		SccAuxPath1 = https://tfs.codeplex.com/tfs/tfs12
+		SccLocalPath1 = ..\\PhysMeasure\\PhysicalMeasureTest
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = PhysCalc\\PhysCalc.csproj
+		SccProjectName2 = PhysCalc
+		SccAuxPath2 = https://tfs.codeplex.com/tfs/tfs12
+		SccLocalPath2 = PhysCalc
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = PhysCalculatorTests\\PhysCalculatorTests.csproj
+		SccProjectTopLevelParentUniqueName3 = PhysCalculator.sln
+		SccProjectName3 = PhysCalculatorTests
+		SccAuxPath3 = https://tfs.codeplex.com/tfs/tfs12
+		SccLocalPath3 = PhysCalculatorTests
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = PhysCalculator.vsmdi
+	EndGlobalSection
+EndGlobal

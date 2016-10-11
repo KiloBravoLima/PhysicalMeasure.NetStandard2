@@ -1,0 +1,13 @@
+﻿// Saved 2014-05-19 13:35:00 to ShortenFractions.cal
+// 
+
+set Var1 = 1010 GW * 0,4 * 356 d * 24 h/d
+// 3451776 GW·h
+set Var2 = 1010 GW * 0,4 * 356 d * 24 h/d [TWh]
+// 3451,776 TW·h
+set Var3 = 1010 GW * 0,4 * 356 d * 24 h/d / 20200 TWh
+// 170,88 GW/TW
+
+set Var4 = 3451776 GW·h / 20200 TWh
+// 170,88 GW/TW
+

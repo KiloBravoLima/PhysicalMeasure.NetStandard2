@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicalMeasure", "PhysicalMeasure\PhysicalMeasure.csproj", "{4A1384AC-58AA-4758-822F-25CCC6123F51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0CF27B95-21D6-40D9-B213-EA6121F0A332}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		Performance1.psess = Performance1.psess
+		PhysicalMeasure.vsmdi = PhysicalMeasure.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicalMeasureTest", "PhysicalMeasureTest\PhysicalMeasureTest.csproj", "{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs12
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PhysicalMeasure\\PhysicalMeasure.csproj
+		SccProjectName1 = PhysicalMeasure
+		SccLocalPath1 = PhysicalMeasure
+		SccProjectUniqueName2 = PhysicalMeasureTest\\PhysicalMeasureTest.csproj
+		SccProjectName2 = PhysicalMeasureTest
+		SccLocalPath2 = PhysicalMeasureTest
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = PhysicalMeasure.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1384AC-58AA-4758-822F-25CCC6123F51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

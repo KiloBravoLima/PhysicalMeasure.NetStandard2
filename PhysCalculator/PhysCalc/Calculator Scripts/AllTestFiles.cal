@@ -1,0 +1,8 @@
+﻿// 2012-02-12 18:00 AllTestFiles.cal  
+Read Expression.cal  
+Read Valuta.cal 
+set Default_system = SI
+Read SecInYear.cal 
+Read TestFunc.cal  
+Read EPotFunc.cal 
+Read ShortenFractions.cal

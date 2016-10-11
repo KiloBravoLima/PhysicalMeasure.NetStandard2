@@ -1,0 +1,52 @@
+﻿// Saved 2011-06-03 10:02:22 to EpotFunc.cal
+// Updated 2013-04-17 15:00:00
+
+set gj = 9.82 m·s-2
+var E 
+set Tracelevel = all
+Func EPot(M [Kg], H [m]) 
+{ 
+	M * Outer.gj * H [J] 
+}
+
+Func EKin(M [Kg], V [m/s]) 
+{ 
+	1/2 * M * V^2 [J] 
+}
+
+Func V_from_EKin(M [Kg], Ekin [J])
+{ 
+	(2 * Ekin/M)^0.5 [m/s] 
+}
+
+Func V_from_M_and_H(M [Kg], H [m]) 
+{ 
+//	set Tracelevel = Off
+//	set Tracelevel = all
+
+	var Eres = Epot(M, H)
+	var Vres = V_from_EKin(M, Eres) 
+	set E = Eres
+
+	print H, M, Eres, Vres
+}
+
+Func TestFunc() 
+{ 
+	set Global.M = 60 Kg
+	set Global.H = 100 Km
+	Set Global.V = V_from_M_and_H(M, H) 
+	if (Global.V == 1401.4278433083882 m/s) { set Global.V1_OK=1 } else { set Global.V1_OK=0 }
+	if (Global.E == 58920000 J) { set Global.E1_OK=1 } else { set Global.E1_OK=0 }
+	
+	set M = 100 Kg
+	set H = 1 m
+	Set V = V_from_M_and_H(M, H) 
+	if (V == 4,43170396123207 m/s) { set Global.V2_OK=1 } else { set Global.V2_OK=0 }
+	if (Global.E == 982 J) { set Global.E2_OK=1 } else { set Global.E2_OK=0 }
+
+}
+
+TestFunc() 
+
+list

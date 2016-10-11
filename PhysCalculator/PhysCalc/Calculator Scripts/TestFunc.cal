@@ -1,0 +1,30 @@
+﻿// Test functions
+// UTF8
+
+Func Square ( x ) 
+{
+	x * x 
+}
+
+areal = Square ( 10 m )
+length = 11 m
+areal2 = Square ( length )
+
+Func RetangleAreal ( x [m],  y [m]) 
+{
+	x * y 
+}
+
+Func BoxVolumen ( x [m],  y [m],  z [m]) 
+{
+	x * y * z
+}
+
+areal3 = RetangleAreal ( 2 m, 3 m )
+
+height = 7 m
+width = 27 m
+
+vol = BoxVolumen ( length , width, height )
+
+// End

@@ -1,0 +1,16 @@
+﻿// Saved 2011-06-14 15:05:10 to SecInYear.cal
+// UTF8 
+
+unit msec = 1 ms
+unit microsec = 1 µs
+unit nanosec = 1 ns
+
+unit month = 30 day
+unit y = 1 year
+//set SecInAYear = 1 year [s]
+//set SecInAYear = 31536000 s 
+//set SecInAYear = 1 year * day/year * hour/day * min/hour * sec/min
+set SecInADay = 1 day [s]
+set SecInAMonth = 1 month [s]
+set SecInAYear = 1 year [s]
+

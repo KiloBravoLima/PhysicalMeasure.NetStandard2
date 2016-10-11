@@ -1,0 +1,3 @@
+﻿unit microsec = 1 µs
+unit celcius = 1 °C
+unit microcelsius = 1 µs·°C
