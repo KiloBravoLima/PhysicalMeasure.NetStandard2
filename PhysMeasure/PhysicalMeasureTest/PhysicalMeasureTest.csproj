@@ -64,26 +64,15 @@
     <Compile Include="StaticsTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KBLExtensions\KBL.Extensions.csproj">
-      <Project>{7139b888-5ce1-4604-b2e8-19fd45bc8b0e}</Project>
-      <Name>KBL.Extensions</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PhysicalMeasure\PhysicalMeasure.csproj">
       <Project>{4a1384ac-58aa-4758-822f-25ccc6123f51}</Project>
       <Name>PhysicalMeasure</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="project.json" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\..\PhysCalculator\packages\Clarius.TransformOnBuild.1.1.12\build\Clarius.TransformOnBuild.targets" Condition="Exists('..\..\PhysCalculator\packages\Clarius.TransformOnBuild.1.1.12\build\Clarius.TransformOnBuild.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\..\PhysCalculator\packages\Clarius.TransformOnBuild.1.1.12\build\Clarius.TransformOnBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\PhysCalculator\packages\Clarius.TransformOnBuild.1.1.12\build\Clarius.TransformOnBuild.targets'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

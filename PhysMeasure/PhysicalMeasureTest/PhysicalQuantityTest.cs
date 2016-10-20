@@ -1,8 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Globalization;
-
-
+using System.Reflection;
 using PhysicalMeasure;
 
 
@@ -347,8 +346,8 @@ namespace PhysicalMeasureTest
             Assert.AreEqual(len2.Value, len_value);
             Assert.AreSame(len2.Unit, Km);
 
-            System.Reflection.Assembly assembly = typeof(Quantity).Assembly;
-            String VerStr = System.Reflection.AssemblyExtensions.AssemblyInfo(assembly);
+            System.Reflection.Assembly assembly = typeof(Quantity).GetTypeInfo().Assembly;
+            String VerStr = assembly.AssemblyInfo();
 
 
             System.Diagnostics.Debug.WriteLine("AssemblyExtensions.AssemblyInfo(assembly):" + VerStr);

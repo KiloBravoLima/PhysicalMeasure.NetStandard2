@@ -8,7 +8,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 using System.Globalization;
+
+#if BINARY_SERIALIZATION
 using System.Runtime.Serialization;
+#endif
 
 using static PhysicalMeasure.DimensionExponentsExtension;
 
@@ -25,12 +28,12 @@ namespace PhysicalMeasure
             : base(message, innerException)
         {
         }
-
+#if BINARY_SERIALIZATION
         protected PhysicalUnitFormatException(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
         }
-
+#endif
         public PhysicalUnitFormatException()
             : this("The string argument is not in a valid physical unit format.")
         {
@@ -50,10 +53,12 @@ namespace PhysicalMeasure
         {
         }
 
+#if BINARY_SERIALIZATION
         protected PhysicalUnitMathException(SerializationInfo info, StreamingContext context)
             : base(info, context)
         {
         }
+#endif
 
         public PhysicalUnitMathException()
             : this("The result of the math operation on the Unit argument can't be represented by this implementation of PhysicalMeasure.")
@@ -290,7 +295,7 @@ namespace PhysicalMeasure
             do
             {
                 int Remainder;
-                int NewExponent = Math.DivRem(exponents[i], exponent, out Remainder);
+                int NewExponent = MathUtils.DivRem(exponents[i], exponent, out Remainder);
                 OK = Remainder == 0;
                 NewExponents[i] = (SByte)NewExponent;
 
@@ -2668,7 +2673,7 @@ namespace PhysicalMeasure
             Debug.Assert(this.Kind == UnitKind.DerivedUnit, "The 'this.Kind' must be UnitKind.DerivedUnit");
 
             String ExponentsStr = "";
-#if DEBUG // Error traces only included in debug build
+#if DEBUG && !NETCORE // Error traces only included in debug build
             Boolean UnitIsMissingSystem = false;
 #endif
             int index = 0;
@@ -2687,7 +2692,7 @@ namespace PhysicalMeasure
                     }
                     else
                     {
-#if DEBUG // Error traces only included in debug build
+#if DEBUG && !NETCORE // Error traces only included in debug build
                         UnitIsMissingSystem = true;
 #endif
                         ExponentsStr += "<" + index.ToString() + ">";
@@ -2701,7 +2706,7 @@ namespace PhysicalMeasure
                 index++;
             }
 
-#if DEBUG // Error traces only included in debug build
+#if DEBUG && !NETCORE // Error traces only included in debug build
             if (UnitIsMissingSystem)
             {
                 // Do some trace of error    
@@ -3312,7 +3317,7 @@ namespace PhysicalMeasure
                     expo = (SByte)(-expo);
                 }
 
-                if ((UnitStr.Contains('·') || UnitStr.Contains('/') || UnitStr.Contains('^')) && (expo != 1))
+                if ((UnitStr.IndexOf('·') > -1 || UnitStr.IndexOf('/') > -1 || UnitStr.IndexOf('^') > -1) && (expo != 1))
                 {
                     Str = "(" + UnitStr + ")";
                 }
@@ -3374,7 +3379,7 @@ namespace PhysicalMeasure
             else
             {
                 int reminder;
-                combinedPrefixExponent = (SByte)Math.DivRem(outerPUE_PrefixExponent, this.Exponent, out reminder);
+                combinedPrefixExponent = (SByte)MathUtils.DivRem(outerPUE_PrefixExponent, this.Exponent, out reminder);
                 if (reminder != 0)
                 {
                     scaleFactor = Math.Pow(10, 1.0 * reminder);
@@ -3488,7 +3493,7 @@ namespace PhysicalMeasure
             {
                 SByte newPrefixExponent = 0;
                 int remainder;
-                int newExponent = Math.DivRem(pue.Exponent, someExponent, out remainder);
+                int newExponent = MathUtils.DivRem(pue.Exponent, someExponent, out remainder);
                 if (remainder != 0)
                 {
                     Debug.Assert(remainder == 0);
