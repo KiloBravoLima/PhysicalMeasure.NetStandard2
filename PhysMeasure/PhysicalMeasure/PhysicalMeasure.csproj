@@ -52,7 +52,11 @@
     <DefineConstants>FrameworkVersion_$(TargetFrameworkVersion.Replace("v", "").Replace(".", "_"));$(DefineConstants)</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\KBLExtensions\KBL.Extensions.cs">
+      <Link>KBL.Extensions.cs</Link>
+    </Compile>
     <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="MathUtils.cs" />
     <Compile Include="PhysicalMeasure.1.Interfaces.cs" />
     <Compile Include="PhysicalMeasure.3.Statics.cs" />
     <Compile Include="PhysicalMeasure.4.Constants.cs" />
@@ -72,6 +76,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <None Include="project.json" />
     <None Include="Properties\AssemblyInfo.ttlog">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -85,12 +90,6 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\KBLExtensions\KBL.Extensions.csproj">
-      <Project>{7139b888-5ce1-4604-b2e8-19fd45bc8b0e}</Project>
-      <Name>KBL.Extensions</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
