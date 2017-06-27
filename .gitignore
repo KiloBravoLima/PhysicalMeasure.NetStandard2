@@ -34,6 +34,7 @@ Ankh.NoLoad
 
 #Tooling
 .vs/
+.idea/
 _ReSharper*/
 _dotCover*/
 *.resharper
@@ -43,4 +44,3 @@ _dotCover*/
 
 
 /PhysCalculator/packages
-

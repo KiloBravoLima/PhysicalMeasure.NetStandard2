@@ -1,0 +1,31 @@
+<Project>
+
+  <PropertyGroup>
+
+    <Copyright>Copyright © 2010-2017 Kilo Bravo</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+
+    <Authors>Kilo Bravo</Authors>
+    <WarningsAsErrors>True</WarningsAsErrors>
+
+    <PackageTags>physical;measure;quantity;unit;SI;system;conversion;physics;engineering</PackageTags>
+    <PackageProjectUrl>https://github.com/KiloBravoLima/PhysicalMeasure</PackageProjectUrl>
+    <PackageLicenseUrl>https://opensource.org/licenses/MS-PL</PackageLicenseUrl>
+
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/KiloBravoLima/PhysicalMeasure</RepositoryUrl>
+
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+
+    <VersionPrefix>3.0.0.0</VersionPrefix>
+    <VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(BuildNumber)' != ''">$(VersionSuffix)-$(BuildNumber)</VersionSuffix>
+
+    <CLSCompliant>True</CLSCompliant>
+    <ComVisible>False</ComVisible>
+    <DebugType>embedded</DebugType>
+    <DebugSymbols>True</DebugSymbols>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+
+  </PropertyGroup>
+
+</Project>
