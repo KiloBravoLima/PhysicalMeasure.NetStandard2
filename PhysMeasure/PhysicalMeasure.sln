@@ -1,18 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicalMeasure", "PhysicalMeasure\PhysicalMeasure.csproj", "{4A1384AC-58AA-4758-822F-25CCC6123F51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhysicalMeasure", "PhysicalMeasure\PhysicalMeasure.csproj", "{4A1384AC-58AA-4758-822F-25CCC6123F51}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0CF27B95-21D6-40D9-B213-EA6121F0A332}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
 		global.json = global.json
-		Performance1.psess = Performance1.psess
-		PhysicalMeasure.vsmdi = PhysicalMeasure.vsmdi
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicalMeasureTest", "PhysicalMeasureTest\PhysicalMeasureTest.csproj", "{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhysicalMeasureTest", "PhysicalMeasureTest\PhysicalMeasureTest.csproj", "{3D655BBE-CBDC-4023-ACD4-6B5F65AF01FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

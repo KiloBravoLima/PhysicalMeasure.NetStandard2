@@ -1089,8 +1089,10 @@ namespace PhysicalMeasureTest
         [TestMethod()]
         public void AdditionOfUnitsWithNumbersTest()
         {
-            Quantity m = Quantity.Parse("1 g") as Quantity;
+            Quantity m = Quantity.Parse("1 g");
+#pragma warning disable 219
             double h = 10.0; 
+#pragma warning restore 219
 
             // Must not compile:  
             // Quantity m_plus_h = m + h;
@@ -1106,8 +1108,10 @@ namespace PhysicalMeasureTest
         [TestMethod()]
         public void SubtractionOfUnitsWithNumbersTest()
         {
-            Quantity m = Quantity.Parse("1 g") as Quantity;
+            Quantity m = Quantity.Parse("1 g");
+#pragma warning disable 219
             double h = 10.0;
+#pragma warning restore 219
 
             // Must not compile:  
             // Quantity m_sub_h = m - h;
