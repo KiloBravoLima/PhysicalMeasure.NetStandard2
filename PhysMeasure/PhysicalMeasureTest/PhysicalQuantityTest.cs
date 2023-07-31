@@ -258,6 +258,31 @@ namespace PhysicalMeasureTest
         }
 
         /// <summary>
+        ///A test for power operator (for CombinedUnit having a prefix)
+        ///</summary>
+        [TestMethod()]
+        public void QuantityTest_PowerOfCombinedUnitTest()
+        {
+            Unit cm = Prefix.c * SI.m;
+            Assert.AreEqual((cm ^ 3) * 1000000, 1 * SI.m ^ 3);
+
+            Unit cm3 = cm * cm * cm;
+            Assert.AreEqual(cm3 * 1000000, 1 * SI.m ^ 3);
+        }
+
+        /// <summary>
+        ///A test for power operator (for PrefixedUnit)
+        ///</summary>
+        [TestMethod()]
+        public void QuantityTest_PowerOfPrefixedUnitTest()
+        {
+            Unit MHz = Prefix.M * SI.Hz;
+            Assert.AreEqual((MHz.Pow(-1)) * 1, SI.s * 1e-6);
+
+            Assert.AreEqual(((MHz.Pow(-2)) * 1).ConvertToBaseUnit(), (SI.s ^ 2) * 1e-12); // throws and Debug.Assert() in 
+        }
+
+        /// <summary>
         ///A test for root operator
         ///</summary>
         [TestMethod()]
