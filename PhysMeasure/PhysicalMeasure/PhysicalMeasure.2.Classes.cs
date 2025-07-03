@@ -3156,6 +3156,11 @@ namespace PhysicalMeasure
             return combinedUnitString;
         }
 
+        /// <inheritdoc />
+        public override Unit Power(sbyte exponent)
+        {
+            return new CombinedUnit(this).Power(exponent);
+        }
     }
 
     public class PrefixedUnitExponent : Unit, IPrefixedUnitExponent
@@ -4528,7 +4533,10 @@ namespace PhysicalMeasure
 
         public override Quantity Divide(double quantity) => this / quantity;
 
-        public override Unit Power(SByte exponent) => new CombinedUnit(Numerators.Power(exponent), Denominators.Power(exponent));
+        public override Unit Power(SByte exponent)
+        {
+            return new CombinedUnit(Math.Pow(FactorValue, exponent), Numerators.Power(exponent), Denominators.Power(exponent));
+        }
 
         public override Unit Root(SByte exponent)
         {
